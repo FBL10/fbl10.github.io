@@ -4,7 +4,7 @@
 		<p>
 		<em>{{ item.title }}</em>. 
 		{% for author in item.authors %}
-      {% if author == site.title %}<b>{{ author }}</b>{% else %}{{ author }}{% endif %}{% if forloop.last == false %}, {% else %}.{% endif %}
+      {% if author contains site.title %}<b>{{ author }}</b>{% else %}{{ author }}{% endif %}{% if forloop.last == false %}, {% else %}.{% endif %}
 		{% endfor %}
 		{{ item.journal }}.
 		{{ item.year }}.

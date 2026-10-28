@@ -9,8 +9,8 @@
       link: https://arxiv.org/abs/2610.17363
 - title: "MedHal: a Synthetic Dataset for Medical Hallucination Detection"
   authors:
-    - Fabrice Lamarche
-    - Gaya Mehenni
+    - "Fabrice Lamarche *"
+    - "Gaya Mehenni *"
     - Neshat Elhami Fard
     - Odette Rios-Ibacache
     - Li Ming Wang
@@ -18,6 +18,7 @@
     - Amal Zouaq
   year: 2025
   journal: The 5th Asia-Pacific Chapter of the Association for Computational Linguistics and the 15th International Joint Conference on Natural Language Processing (AACL-IJCNLP 2026)
+  misc: "* Equal contribution."
   tags:
     - tag: arXiv
       link: https://arxiv.org/abs/2504.08596

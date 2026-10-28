@@ -14,7 +14,7 @@ Beyond academia, I have also held various industry positions, namely as a Scient
 
 {% assign news = site.news | sort: 'date' | reverse %}
 {% for entry in news limit:3 %}
-- <small>{{ entry.date | date_to_string }}</small> — [{{ entry.title }}]({{ entry.url }}) {{ entry.content | strip_html }}
+- <small>{{ entry.date | date_to_string }}</small> — {{ entry.title }} {{ entry.content | strip_html }}
 {% endfor %}
 
 #### Contact

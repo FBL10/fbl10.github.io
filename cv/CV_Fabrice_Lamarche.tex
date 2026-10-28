@@ -1,24 +1,22 @@
 \documentclass[10pt,a4paper]{article}
 
-% ---------- Packages ----------
+% ---------- Packages (deliberately minimal, compiles on any standard LaTeX) ----------
 \usepackage[margin=2.0cm,top=1.5cm,bottom=1.5cm]{geometry}
-\usepackage{enumitem}
-\usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
-\usepackage{microtype}
 
 % ---------- Formatting ----------
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \raggedbottom
 
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-6pt}\hrule\vspace{2pt}]
-\titlespacing{\section}{0pt}{8pt}{4pt}
-\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
-\titlespacing{\subsection}{0pt}{6pt}{1pt}
-
+% Section heading with a thin rule underneath
+\newcommand{\cvsec}[1]{%
+  \vspace{10pt}%
+  {\noindent\large\bfseries #1\par}%
+  \vspace{1pt}\hrule\vspace{1pt}%
+}
+\newcommand{\cventry}[2]{\noindent\textbf{#1}\hfill\textnormal{\small[#2]}\par}
 \newcommand{\dates}[1]{\hfill\textnormal{\small[#1]}}
-\newcommand{\titledates}[2]{\subsection{#1 \hfill\textnormal{\small[#2]}}}
 
 \begin{document}
 
@@ -35,45 +33,27 @@
 \vspace{2pt}
 
 % ================= Education =================
-\section{Education}
+\cvsec{Education}
 
-\subsection{Mila --- Polytechnique Montr\'eal}
-\textbf{Ph.D.\ Candidate in Artificial Intelligence} (LAMA-WeST Lab)\dates{2024 -- present}\\
-Thesis topic: language models, nonparametric memories and synthetic data for medical text
-processing.\\
-{\small Supervisor: Prof.\ Amal Zouaq}
+\cventry{Ph.D.\ Candidate, Artificial Intelligence}{2024 -- present}
+Mila --- Polytechnique Montr\'eal (LAMA-WeST Lab). Thesis topic: language models, nonparametric
+memories and synthetic data for medical text processing. Supervisor: Prof.\ Amal Zouaq.
 
-\subsection{Universit\'e de Montr\'eal --- Department of Computer Science and Operations
-Research (DIRO)}
-\textbf{M.Sc.\ in Information Technology (Artificial Intelligence)} (RALI)\dates{2021 -- 2023}\\
-Thesis: \emph{M\'ethodes d'\'evaluation en extraction d'information ouverte}.\\
-{\small Supervisor: Prof.\ Philippe Langlais \; $\cdot$ \; DIRO Writing Fellowship, 2023}
+\vspace{4pt}
+\cventry{M.Sc.\ in Artificial Intelligence --- Universit\'e de Montr\'eal, DIRO (RALI)}{2021 -- 2023}
+Thesis: \emph{M\'ethodes d'\'evaluation en extraction d'information ouverte}. Supervisor:
+Prof.\ Philippe Langlais. DIRO Writing Fellowship, 2023.
 
-\titledates{Bachelor's degree --- Mathematics and Computer Science}{2018 -- 2021}
-Data science speciality
-
-% ================= Professional experience =================
-\section{Professional experience}
-
-\titledates{Scientist in Residence --- IVADO (RemedIA program)}{2023 -- 2025}
-\textbf{AI Consultant}\\
-{\small\raggedright AI specialist for an EdTech startup: fine-tuning and RAG setup for LLM tutoring.\par}
-
-\titledates{Data Scientist --- Intact Insurance}{2024 -- 2025}
-{\small\raggedright Redefined the evaluation process for market value prediction; performance
-analysis and model maintenance.\par}
-
-\titledates{AI Analyst --- CIUSSS du Centre-Sud-de-l'\'Ile-de-Montr\'eal (Qu\'ebec health
-network)}{2021 -- 2023}
-{\small\raggedright Developed an XGBoost model for hospital stay duration ($<1$ RMSE); analysis
-and visualization of strategic data.\par}
+\vspace{4pt}
+\cventry{Bachelor's degree --- Mathematics and Computer Science}{2018 -- 2021}
+Data science speciality.
 
 % ================= Publications =================
-\section{Publications}
+\cvsec{Publications}
 
-\begin{enumerate}[label={[\arabic*]}, itemsep=3pt, topsep=2pt, leftmargin=2.2em, itemindent=-2.2em,
-    labelsep=0.4em]
-
+\renewcommand{\labelenumi}{[\theenumi]}
+\begin{enumerate}
+  \setlength{\itemsep}{3pt}
   \item \href{https://arxiv.org/abs/2610.17363}{UMCR: Universal Medical Concept Recognition
         through Guideline Integration and Agentic Linking} \emph{(preprint).}\\
         \textbf{F. Lamarche}, A. Zouaq. arXiv:2610.17363, 2026.
@@ -87,13 +67,47 @@ and visualization of strategic data.\par}
         Manually Re-Annotated Fact-Based Open Information Extraction Benchmark}.\\
         \textbf{F. Lamarche}, P. Langlais. \emph{Findings of the Association for Computational
         Linguistics: ACL 2024}, pp.\ 8372--8394, 2024.
-
 \end{enumerate}
 
-% ================= Awards & competitions =================
-\section{Awards and competitions}
+% ================= Talks =================
+\cvsec{Talks}
 
-\begin{itemize}[nosep, topsep=2pt, leftmargin=1.4em]
+\begin{itemize}
+  \setlength{\itemsep}{3pt}
+  \item \textbf{UMCR} --- IVADO R3. \dates{December 2, 2026}
+  \item \textbf{MedHal} (oral \& poster) --- AACL-IJCNLP 2026, Hengqin, China.
+        \dates{November 2026}
+  \item \textbf{IVADO -- Sensibilisations sur l'IA}: \emph{The ABCs of AI} and
+        \emph{AI, a risk for our democracy?} \dates{2025 -- 2026}
+  \item \textbf{BenchIE\textsuperscript{FL}} (poster) --- ACL 2024, Bangkok, Thailand.
+        \dates{August 2024}
+\end{itemize}
+
+% ================= Professional experience =================
+\cvsec{Professional experience}
+
+\cventry{Teaching Assistant --- Natural Language Processing course, Polytechnique
+Montr\'eal}{Fall 2025}
+
+\vspace{4pt}
+\cventry{Scientist in Residence --- IVADO (RemedIA program)}{2023 -- 2025}
+AI Consultant. AI specialist for an EdTech startup: fine-tuning and RAG setup for LLM tutoring.
+
+\vspace{4pt}
+\cventry{Data Scientist --- Intact Insurance}{2024 -- 2025}
+Redefined the evaluation process for market value prediction; performance analysis and model
+maintenance.
+
+\vspace{4pt}
+\cventry{Data Scientist --- Sant\'e Qu\'ebec}{2021 -- 2023}
+Developed an XGBoost model for hospital stay duration ($<1$ RMSE); analysis and visualization of
+strategic data.
+
+% ================= Awards & competitions =================
+\cvsec{Awards and competitions}
+
+\begin{itemize}
+  \setlength{\itemsep}{2pt}
   \item DIRO Writing Fellowship (2023)
   \item \textbf{Datathon} (2022, 2023) --- \emph{PolyFinance}: AI and NLP competition applied to
         finance. Best performing solution for exchange rate prediction (time series) using
@@ -102,21 +116,11 @@ and visualization of strategic data.\par}
         Montr\'eal.
 \end{itemize}
 
-% ================= Presentations =================
-\section{Presentations}
+% ================= Technical skills =================
+\cvsec{Technical skills}
 
-\begin{itemize}[nosep, topsep=2pt, leftmargin=1.4em]
-  \item \emph{The ABCs of AI} and \emph{AI, a risk for our democracy?} --- IVADO Raising
-        Awareness on AI\dates{2025 -- 2026}
-  \item BenchIE\textsuperscript{FL}, MedHal, UMCR, and an AI coding assistant (DRAC) ---
-        LAMA-WeST Lab seminar\dates{2025}
-\end{itemize}
-
-% ================= Skills =================
-\section{Technical skills}
-
-\textbf{Research methods:} evaluation of ML models; LLM fine-tuning, RAG, in-context learning,
-agentic workflows; RL.\\
+\noindent\textbf{Research methods:} evaluation of ML models; LLM fine-tuning, RAG, in-context
+learning, agentic workflows; RL.\\
 \textbf{Software engineering:} Python (PyTorch, Transformers, vLLM, Ollama).\\
 \textbf{Infrastructure:} Azure ML, Snowflake, SQL. \quad \textbf{Languages:} English, French.
 

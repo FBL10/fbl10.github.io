@@ -1,6 +1,6 @@
-- name: Projects
-  link: /projects.html
 - name: Publications
   link: /publications.html
+- name: News
+  link: /news.html
 - name: CV
   link: /cv.html

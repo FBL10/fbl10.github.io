@@ -1,4 +1,5 @@
 - title: "UMCR: Universal Medical Concept Recognition through Guideline Integration and Agentic Linking"
+  selected: true
   authors:
     - Fabrice Lamarche
     - Amal Zouaq
@@ -8,6 +9,7 @@
     - tag: arXiv
       link: https://arxiv.org/abs/2610.17363
 - title: "MedHal: a Synthetic Dataset for Medical Hallucination Detection"
+  selected: true
   authors:
     - "Fabrice Lamarche *"
     - "Gaya Mehenni *"

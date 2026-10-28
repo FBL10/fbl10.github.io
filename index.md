@@ -17,6 +17,13 @@ Beyond academia, I have also held various industry positions, namely as a Scient
 - <small>{{ entry.date | date_to_string }}</small> — {{ entry.title }} {{ entry.content }}
 {% endfor %}
 
+#### Selected publications
+
+{% assign selected = site.data.publications | where: "selected", true %}
+{% for item in selected %}
+  {% include publication-item.html %}
+{% endfor %}
+
 #### Contact
 fabrice.lamarche _at_ mila.quebec
 

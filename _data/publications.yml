@@ -1,80 +1,42 @@
-- title: "Multi-Fidelity Active Learning with GFlowNets"
+- title: "UMCR: Universal Medical Concept Recognition through Guideline Integration and Agentic Linking"
   authors:
-    - Alex Hernandez-Garcia
-    - Nikita Saxena
-    - Moksh Jain
-    - Cheng-Hao Liu
-    - Yoshua Bengio
-  year: 2023
-  journal: Transactions on Machine Learning Research (TMLR)
-  tags:
-    - tag: OpenReview
-      link: https://openreview.net/forum?id=dLaazW9zuF
-    - tag: arXiv
-      link: https://arxiv.org/abs/2306.11715
-    - tag: code
-      link: https://github.com/nikita-0209/mf-al-gfn
-- title: "Crystal-GFN: sampling crystals with desirable properties and constraints"
-  authors:
-    - Mila AI4Science
-    - Alex Hernandez-Garcia
-    - Alexandre Duval
-    - Alexandra Volokhova
-    - Yoshua Bengio
-    - Divya Sharma
-    - Pierre Luc Carrier
-    - Yasmine Benabed
-    - Michał Koziarski
-    - Victor Schmidt
-  year: 2023
-  journal: Neural Information Processing Systems (NeurIPS), Workshop on Accelerated Materials Design (AI4Mat)
+    - Fabrice Lamarche
+    - Amal Zouaq
+  year: 2026
+  journal: arXiv preprint (arXiv:2610.17363)
   tags:
     - tag: arXiv
-      link: https://arxiv.org/abs/2310.04925
-    - tag: code
-      link: https://github.com/alexhernandezgarcia/gflownet
-- title: "Towards equilibrium molecular conformation generation with GFlowNets"
+      link: https://arxiv.org/abs/2610.17363
+- title: "MedHal: a Synthetic Dataset for Medical Hallucination Detection"
   authors:
-    - Alexandra Volokhova
-    - Michał Koziarski
-    - Alex Hernandez-Garcia
-    - Cheng-Hao Liu
-    - Santiago Miret
-    - Pablo Lemos
-    - Luca Thiede
-    - Zichao Yan
-    - Alán Aspuru-Guzik
-    - Yoshua Bengio
-  year: 2023
-  journal: Digital Discovery, Royal Society of Chemistry
-  tags:
-    - tag: Digital Discovery
-      link: https://pubs.rsc.org/en/content/articlepdf/2024/DD/D4DD00023D
-    - tag: arXiv
-      link: https://arxiv.org/abs/2310.14782
-    - tag: code
-      link: https://github.com/alexhernandezgarcia/gflownet
-- title: "GFlowNets for AI-driven scientific discovery"
-  authors:
-    - Moksh Jain
-    - Tristan Deleu
-    - Jason Hartford
-    - Cheng-Hao Liu
-    - Alex Hernandez-Garcia
-    - Yoshua Bengio
-  year: 2023
-  journal: Digital Discovery, Royal Society of Chemistry
-  tags:
-    - tag: Digital Discovery
-      link: https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00002h
-    - tag: arXiv
-      link: https://arxiv.org/abs/2302.00615
-- title: "Counting carbon: A survey of factors influencing the emissions of machine learning"
-  authors:
-    - Sasha Luccioni
-    - Alex Hernandez-Garcia
-  year: 2023
-  journal: arXiv:2302.08476
+    - Fabrice Lamarche
+    - Gaya Mehenni
+    - Neshat Elhami Fard
+    - Odette Rios-Ibacache
+    - Li Ming Wang
+    - John Kildea
+    - Amal Zouaq
+  year: 2025
+  journal: The 5th Asia-Pacific Chapter of the Association for Computational Linguistics and the 15th International Joint Conference on Natural Language Processing (AACL-IJCNLP 2026)
   tags:
     - tag: arXiv
-      link: https://arxiv.org/abs/2302.08476
+      link: https://arxiv.org/abs/2504.08596
+- title: "BenchIE^FL: A Manually Re-Annotated Fact-Based Open Information Extraction Benchmark"
+  authors:
+    - Fabrice Lamarche
+    - Philippe Langlais
+  year: 2024
+  journal: "Findings of the Association for Computational Linguistics: ACL 2024"
+  tags:
+    - tag: ACL Anthology
+      link: https://aclanthology.org/2024.findings-acl.496/
+    - tag: arXiv
+      link: https://arxiv.org/abs/2407.16860
+- title: "Méthodes d'évaluation en extraction d'information ouverte"
+  authors:
+    - Fabrice Lamarche
+  year: 2023
+  journal: M.Sc. thesis, Université de Montréal
+  tags:
+    - tag: Google Scholar
+      link: https://scholar.google.com/citations?user=vrGzOI0AAAAJ&hl=en

@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Personal Website
-tagline: A template for a personal website
-email: firstname.lastname@e.email
-description: A template for a personal website, tailored for academics.
-author: Alex Hernandez-Garcia
-url: https://alexhernandezgarcia.github.io
+title: Fabrice Lamarche
+tagline: PhD Candidate — LLMs, Information Extraction & Agentic Approaches for Healthcare
+email: fabrice.lamarche@mila.quebec
+description: Personal website of Fabrice Lamarche, PhD candidate at Mila and Polytechnique Montréal, working on large language models and information extraction in the medical domain.
+author: Fabrice Lamarche
+url: https://fabricelamarche.com
 
 # Reading Files
 include:

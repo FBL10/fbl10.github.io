@@ -1,0 +1,191 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1.2cm,top=1.0cm,bottom=1.0cm]{geometry}
+\usepackage{paracol}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{cvblue}{HTML}{1a5fb4}
+\definecolor{cvgray}{HTML}{555555}
+
+% ---------- Section formatting ----------
+\titleformat{\section}{\large\bfseries\color{cvblue}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{6pt}{1pt}
+
+% ---------- Generic helpers ----------
+\newcommand{\entry}[2]{\textbf{#1} \\ {\small\color{cvgray}#2}}
+\newcommand{\itemcli}[1]{\item #1}
+\NewCommandCopy{\oldtextsuperscript}{\textsuperscript}
+
+\setlist[itemize]{nosep, leftmargin=11pt}
+
+% ---------- Main layout ----------
+\begin{document}
+
+\pagestyle{empty}
+\parindent=0pt
+
+% ================= Header =================
+\begin{minipage}[t]{0.62\textwidth}
+    {\LARGE\bfseries Fabrice Lamarche}\\[3pt]
+    {\large PhD Candidate, Artificial Intelligence --- Mila}
+\end{minipage}%
+\begin{minipage}[t]{0.36\textwidth}
+    \raggedleft
+    {\small
+    \href{mailto:fabricelamarche0@gmail.com}{fabricelamarche0@gmail.com}\\
+    \href{https://www.linkedin.com/in/fabrice-lamarche}{linkedin.com/fabrice-lamarche}\\
+    \href{https://github.com/fbl10}{github.com/fbl10}\\
+    \href{https://fabricelamarche.com}{fabricelamarche.com}
+    }
+\end{minipage}
+
+\vspace{6pt}
+\hrule
+\vspace{4pt}
+
+% ================= Body: two columns =================
+\columnratio{0.64, 0.34}
+\begin{paracol}{2}
+
+% ================= Professional experience =================
+\section{Professional experience}
+
+\subsection{Intact Insurance}
+{\color{cvgray}\small Data Scientist \hfill 2024 -- 2025}
+\begin{itemize}
+  \item Redefined the evaluation process for market value prediction
+  \item Performance analysis, model maintenance
+\end{itemize}
+
+\subsection{RemedIA --- IVADO}
+{\color{cvgray}\small AI Consultant -- Scientist in Residence \hfill 2023 -- 2025}
+\begin{itemize}
+  \item EdTech startup: AI specialist
+  \item Fine-tuning and RAG setup for LLM tutoring
+\end{itemize}
+
+\subsection{Government of Qu\'ebec, CIUSSS Centre-Sud}
+{\color{cvgray}\small AI Analyst \hfill 2021 -- 2023}
+\begin{itemize}
+  \item Developed an XGBoost model for hospital stay duration ($<1$ RMSE)
+  \item Analysis and visualization of strategic data
+\end{itemize}
+
+% ================= Publications =================
+\section{Publications}
+
+\textbf{UMCR: Universal Medical Concept Recognition through Guideline
+Integration and Agentic Linking}\\
+F. Lamarche and A. Zouaq --- \emph{arXiv preprint} 2026.
+\begin{itemize}
+  \item Universal pipeline for medical concept recognition over any target
+        ontology and any source text type
+  \item Direct guideline integration and agentic linking module
+  \item Reduces dependence on parametric LLM memory
+\end{itemize}
+
+\textbf{MedHal: a Synthetic Dataset for Medical Hallucination Detection}\\
+F. Lamarche et al. --- \emph{AACL-IJCNLP 2026} (to appear).
+\begin{itemize}
+  \item Synthetic dataset allowing the identification of hallucinations in
+        medical text
+  \item Data creation and filtering, fine-tuning, evaluation and expert
+        validation
+\end{itemize}
+
+\textbf{BenchIE\oldtextsuperscript{FL}: A Manually Re-Annotated Fact-Based
+Open Information Extraction Benchmark}\\
+Fabrice Lamarche and Philippe Langlais --- \emph{ACL 2024 Findings}.
+\begin{itemize}
+  \item Manual annotation of OpenIE data, creation of an automated evaluation
+        metric
+\end{itemize}
+
+% ================= Education =================
+\section{Education}
+
+\subsection{Mila --- Polytechnique Montr\'eal}
+{\color{cvgray}\small PhD Candidate --- Artificial Intelligence (LAMA-WeST
+Lab) \hfill 2024 -- present}
+\begin{itemize}
+  \item Language models, nonparametric memories and synthetic data for
+        medical text processing
+\end{itemize}
+
+\subsection{Universit\'e de Montr\'eal, Department of Computer Science and
+Operations Research (DIRO)}
+{\color{cvgray}\small Master's degree --- Artificial Intelligence (RALI)
+\hfill 2021 -- 2023}
+\begin{itemize}
+  \item DIRO Writing Fellowship 2023
+  \item Natural Language Processing (NLP)
+  \item Open information extraction (OpenIE) and evaluation methods
+\end{itemize}
+
+\subsection{Bachelor's degree --- Mathematics and Computer Science}
+{\color{cvgray}\small Data science speciality \hfill 2018 -- 2021}
+
+\switchcolumn
+
+% ================= Right column: presentations =================
+\section{Presentations}
+
+\subsection{IVADO --- Raising awareness on AI}
+{\color{cvgray}\small 2025 -- 2026}
+\begin{itemize}
+  \item The ABCs of AI
+  \item AI, a risk for our democracy?
+\end{itemize}
+
+\subsection{LAMA-WeST Seminars}
+{\color{cvgray}\small 2025}
+\begin{itemize}
+  \item BenchIE\oldtextsuperscript{FL}, MedHal, UMCR, DRAC coding-assistant
+\end{itemize}
+
+% ================= Competitions =================
+\section{Competitions}
+
+\subsection{Datathon 2022, 2023 --- PolyFinance}
+AI and NLP competition applied to finance.
+\begin{itemize}
+  \item Exchange rate prediction (time series)
+  \item Best performing solution using FinBERT + CNN-LSTM (0.0004 MSE)
+\end{itemize}
+
+\subsection{CodeML 2022 --- PolyAI}
+Machine Learning Competition, Polytechnique Montr\'eal.
+
+% ================= Skills =================
+\section{Skills}
+
+\subsection{Research}
+\begin{itemize}
+  \item Evaluation of ML models
+  \item LLM fine-tuning, RAG, in-context learning, agentic workflows
+  \item RL
+\end{itemize}
+
+\subsection{Python}
+\begin{itemize}
+  \item PyTorch, Transformers, vLLM, Ollama
+\end{itemize}
+
+\subsection{Cloud}
+\begin{itemize}
+  \item Azure ML, Snowflake, SQL
+\end{itemize}
+
+% ================= Languages =================
+\section{Languages}
+English, French
+
+\end{paracol}
+
+\end{document}

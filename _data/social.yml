@@ -12,6 +12,12 @@
     source: fa
     name: fa-github
     type: fab
+- name: LinkedIn
+  link: https://www.linkedin.com/in/fabrice-lamarche
+  icon:
+    source: fa
+    name: fa-linkedin
+    type: fab
 - name: Email
   link: mailto:fabrice.lamarche@mila.quebec
   icon:

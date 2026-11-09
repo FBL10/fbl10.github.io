@@ -8,7 +8,7 @@
   tags:
     - tag: arXiv
       link: https://arxiv.org/abs/2610.17363
-- title: "MedHal: a Synthetic Dataset for Medical Hallucination Detection"
+- title: "MedHal: A Synthetic Dataset for Medical Hallucination Detection"
   selected: true
   authors:
     - "Fabrice Lamarche *"
@@ -18,10 +18,12 @@
     - Li Ming Wang
     - John Kildea
     - Amal Zouaq
-  year: 2025
-  journal: The 5th Asia-Pacific Chapter of the Association for Computational Linguistics and the 15th International Joint Conference on Natural Language Processing (AACL-IJCNLP 2026)
+  year: 2026
+  journal: Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (AACL-IJCNLP 2026), Volume 1: Long Papers
   misc: "* Equal contribution."
   tags:
+    - tag: ACL Anthology
+      link: https://aclanthology.org/2026.aacl-long.208/
     - tag: arXiv
       link: https://arxiv.org/abs/2504.08596
 - title: "BenchIE^FL: A Manually Re-Annotated Fact-Based Open Information Extraction Benchmark"
